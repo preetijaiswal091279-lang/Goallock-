@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GoalLock | Home</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="app">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <div class="logo">
+
+                <h1>🔒 GOALLOCK</h1>
+
+                <p>
+                    Lock distractions.<br>
+                    Unlock your goals.
+                </p>
+
+            </div>
+
+
+            <nav class="nav-menu">
+
+
+                <a
+                    href="/"
+                    class="active"
+                >
+                    🏠 Home
+                </a>
+
+
+                <a href="/block">
+                    🚫 Block Distractions
+                </a>
+
+
+                <a href="/progress">
+                    📊 My Progress
+                </a>
+
+
+                <a href="/history">
+                    🕒 History
+                </a>
+
+
+                <a href="/settings">
+                    ⚙️ Settings
+                </a>
+
+
+            </nav>
+
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- WELCOME -->
+
+            <section class="welcome">
+
+                <h2>
+                    Welcome to GoalLock 👋
+                </h2>
+
+                <p>
+                    Protect your focus and make progress
+                    toward what matters.
+                </p>
+
+            </section>
+
+
+
+            <!-- FOCUS SESSION -->
+
+            <section class="focus-card">
+
+
+                <p class="section-label">
+                    YOUR FOCUS SESSION
+                </p>
+
+
+                <!-- TIMER -->
+
+                <div class="timer">
+                    45:00
+                </div>
+
+
+
+                <!-- TIMER OPTIONS -->
+
+                <div class="timer-options">
+
+
+                    <button
+                        type="button"
+                        class="time-button"
+                        data-time="25"
+                    >
+                        25 min
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="time-button selected"
+                        data-time="45"
+                    >
+                        45 min
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="time-button"
+                        data-time="60"
+                    >
+                        1 hour
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="custom-button"
+                    >
+                        Custom
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- START BUTTON -->
+
+                <div class="timer-controls">
+
+                    <button
+                        type="button"
+                        class="start-button"
+                    >
+                        🔒 START GOALLOCK SESSION
+                    </button>
+
+                </div>
+
+
+
+                <!-- SESSION STATUS -->
+
+                <div class="session-info">
+
+                    <p class="session-status">
+                        Ready
+                    </p>
+
+                    <p class="session-message"></p>
+
+                </div>
+
+
+
+                <!-- CURRENTLY BLOCKED -->
+
+                <div class="currently-blocked">
+
+                    <h3>
+                        🔒 Currently Blocked
+                    </h3>
+
+
+                    <div class="blocked-items-list">
+
+                        <p>
+                            No distractions selected yet.
+                            Go to Block Distractions first.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WARNING -->
+
+                <p class="lock-warning">
+
+                    🔒 Once GoalLock starts, your selected
+                    distractions stay blocked until the
+                    focus session ends.
+
+                </p>
+
+
+            </section>
+
+
+
+            <!-- TODAY'S PROGRESS -->
+
+            <section class="progress-section">
+
+
+                <h3>
+                    Your Focus Today
+                </h3>
+
+
+                <div class="progress-cards">
+
+
+                    <!-- FOCUS TIME -->
+
+                    <div class="progress-card">
+
+
+                        <span>
+                            ⏱️
+                        </span>
+
+
+                        <div>
+
+                            <h4>
+                                Focus Time
+                            </h4>
+
+
+                            <p class="today-focus">
+                                0 min
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- SESSIONS -->
+
+                    <div class="progress-card">
+
+
+                        <span>
+                            🎯
+                        </span>
+
+
+                        <div>
+
+                            <h4>
+                                Sessions
+                            </h4>
+
+
+                            <p class="today-sessions">
+                                0 completed
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- STREAK -->
+
+                    <div class="progress-card">
+
+
+                        <span>
+                            🔥
+                        </span>
+
+
+                        <div>
+
+                            <h4>
+                                Streak
+                            </h4>
+
+
+                            <p>
+                                Start today
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- FOCUS TIP -->
+
+            <section class="focus-tip">
+
+
+                <h3>
+                    💡 Focus Tip
+                </h3>
+
+
+                <p>
+                    Before starting your session, select
+                    the websites and distractions you want
+                    to avoid.
+                </p>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- CUSTOM TIME MODAL -->
+
+    <div class="custom-modal">
+
+
+        <div class="modal-box">
+
+
+            <h2>
+                Custom Focus Time
+            </h2>
+
+
+            <p>
+                Enter the number of minutes
+                you want to focus.
+            </p>
+
+
+            <input
+                type="number"
+                class="custom-time-input"
+                placeholder="Example: 90"
+                min="1"
+            >
+
+
+            <div class="modal-buttons">
+
+
+                <button
+                    type="button"
+                    class="set-custom-time"
+                >
+                    Set Time
+                </button>
+
+
+                <button
+                    type="button"
+                    class="cancel-custom-time"
+                >
+                    Cancel
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+
+
+</body>
+
+</html>

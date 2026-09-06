@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GoalLock | History</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h1>🔒 GOALLOCK</h1>
+
+            <p>
+                Lock distractions.<br>
+                Unlock your goals.
+            </p>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="/">
+                🏠 Home
+            </a>
+
+            <a href="/block">
+                🚫 Block Distractions
+            </a>
+
+            <a href="/progress">
+                📊 My Progress
+            </a>
+
+            <a
+                href="/history"
+                class="active"
+            >
+                🕒 History
+            </a>
+
+            <a href="/settings">
+                ⚙️ Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <main class="main-content">
+
+        <h2>
+            Focus History 🕒
+        </h2>
+
+        <p>
+            Your recent GoalLock sessions.
+        </p>
+
+
+        <section class="history-list">
+
+            <p class="empty-history">
+
+                No sessions yet.
+                Start your first GoalLock session.
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+</body>
+
+</html>

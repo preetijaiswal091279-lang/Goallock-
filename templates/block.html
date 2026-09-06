@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        GoalLock | Block Distractions
+    </title>
+
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+
+            <h1>
+                🔒 GOALLOCK
+            </h1>
+
+            <p>
+                Lock distractions.<br>
+                Unlock your goals.
+            </p>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="/">
+                🏠 Home
+            </a>
+
+
+            <a
+                href="/block"
+                class="active"
+            >
+                🚫 Block Distractions
+            </a>
+
+
+            <a href="/progress">
+                📊 My Progress
+            </a>
+
+
+            <a href="/history">
+                🕒 History
+            </a>
+
+
+            <a href="/settings">
+                ⚙️ Settings
+            </a>
+
+        </nav>
+
+
+    </aside>
+
+
+
+    <main class="main-content">
+
+
+        <h2>
+            Block Your Distractions 🚫
+        </h2>
+
+
+        <p>
+            Select apps or add websites that
+            GoalLock should block during your
+            focus session.
+        </p>
+
+
+
+        <section class="distraction-card">
+
+
+            <h3>
+                Popular Distractions
+            </h3>
+
+
+
+            <div class="distraction-grid">
+
+
+                <button
+                    type="button"
+                    class="distraction-item"
+                    data-app="Instagram"
+                >
+
+                    <i
+                        class="fa-brands fa-instagram app-icon"
+                    ></i>
+
+                    <strong>
+                        Instagram
+                    </strong>
+
+                    <small>
+                        Select
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="distraction-item"
+                    data-app="YouTube"
+                >
+
+                    <i
+                        class="fa-brands fa-youtube app-icon"
+                    ></i>
+
+                    <strong>
+                        YouTube
+                    </strong>
+
+                    <small>
+                        Select
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="distraction-item"
+                    data-app="Facebook"
+                >
+
+                    <i
+                        class="fa-brands fa-facebook app-icon"
+                    ></i>
+
+                    <strong>
+                        Facebook
+                    </strong>
+
+                    <small>
+                        Select
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="distraction-item"
+                    data-app="TikTok"
+                >
+
+                    <i
+                        class="fa-brands fa-tiktok app-icon"
+                    ></i>
+
+                    <strong>
+                        TikTok
+                    </strong>
+
+                    <small>
+                        Select
+                    </small>
+
+                </button>
+
+
+            </div>
+
+
+
+            <div class="custom-website-section">
+
+
+                <h3>
+                    ➕ Add Your Own Website
+                </h3>
+
+
+                <p>
+                    Paste a website link or domain.
+                </p>
+
+
+                <div class="custom-website-input">
+
+
+                    <input
+                        type="text"
+                        class="website-url-input"
+                        placeholder="Example: netflix.com or https://netflix.com"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="add-website-button"
+                    >
+                        + Add Website
+                    </button>
+
+
+                </div>
+
+
+                <p class="website-error"></p>
+
+
+
+                <div class="custom-websites-list">
+
+
+                    <h4>
+                        Your Added Websites
+                    </h4>
+
+
+                    <div class="custom-websites-container">
+
+
+                        <p class="no-custom-websites">
+
+                            No custom websites added yet.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <button
+                type="button"
+                class="save-distractions"
+            >
+                Continue
+            </button>
+
+
+            <p class="selection-message"></p>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GoalLock | Progress</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h1>🔒 GOALLOCK</h1>
+
+            <p>
+                Lock distractions.<br>
+                Unlock your goals.
+            </p>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="/">
+                🏠 Home
+            </a>
+
+            <a href="/block">
+                🚫 Block Distractions
+            </a>
+
+            <a
+                href="/progress"
+                class="active"
+            >
+                📊 My Progress
+            </a>
+
+            <a href="/history">
+                🕒 History
+            </a>
+
+            <a href="/settings">
+                ⚙️ Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <main class="main-content">
+
+        <h2>
+            My Progress 📊
+        </h2>
+
+        <p>
+            Track your focus journey.
+        </p>
+
+
+        <div class="progress-cards large-progress">
+
+
+            <div class="progress-card">
+
+                <span>⏱️</span>
+
+                <div>
+
+                    <h4>
+                        Total Focus Time
+                    </h4>
+
+                    <p class="progress-focus-time">
+                        0 min
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="progress-card">
+
+                <span>🎯</span>
+
+                <div>
+
+                    <h4>
+                        Completed Sessions
+                    </h4>
+
+                    <p class="progress-sessions">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+</body>
+
+</html>

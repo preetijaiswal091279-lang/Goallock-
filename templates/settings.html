@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GoalLock | Settings</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h1>🔒 GOALLOCK</h1>
+
+            <p>
+                Lock distractions.<br>
+                Unlock your goals.
+            </p>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="/">
+                🏠 Home
+            </a>
+
+            <a href="/block">
+                🚫 Block Distractions
+            </a>
+
+            <a href="/progress">
+                📊 My Progress
+            </a>
+
+            <a href="/history">
+                🕒 History
+            </a>
+
+            <a
+                href="/settings"
+                class="active"
+            >
+                ⚙️ Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <main class="main-content">
+
+        <h2>
+            Settings ⚙️
+        </h2>
+
+
+        <section class="settings-card">
+
+            <h3>
+                GoalLock Information
+            </h3>
+
+
+            <p>
+                GoalLock blocks selected
+                websites while your focus
+                session is active.
+            </p>
+
+
+            <p>
+                Website blocking requires
+                Administrator permission
+                on Windows.
+            </p>
+
+
+            <p>
+                When the timer finishes,
+                GoalLock automatically
+                removes its website blocks.
+            </p>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}"
+></script>
+
+</body>
+
+</html>
